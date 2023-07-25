@@ -1,0 +1,69 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+  
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+   
+    height: 100vh;
+}
+.container{
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+
+}
+.container .card{
+    width: 100px;
+    height: 80vh;
+    border-radius: 50px;
+    
+    margin: 10px;
+  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    cursor: pointer;
+    flex: .5;
+    transition: flex .5s linear;
+
+}
+.card h3{
+    position: absolute;
+    bottom: 30px;
+    left: 15px;
+    opacity: 0;
+    transition: opacity  .5s ease-in .4s ;
+}
+.card1{
+    background-image: url(images/room2.jpg);
+}
+.card2{
+    background-image: url(images/room1.jpg);
+}
+.card3{
+    background-image: url(images/room3.jpg);
+}
+.card4{
+    background-image: url(images/room4.jpg);
+}
+.card5{
+    background-image: url(images/room5.jpg);
+}
+ .card.active{
+    flex: 4;
+   
+}
+.active h3{
+    opacity: 1;
+   
+}
